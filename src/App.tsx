@@ -1,24 +1,11 @@
-import { Route, Routes } from "react-router-dom";
 import "./App.less";
 import styles from "./global.less";
-import { Nav } from "./layouts/nav/Nav";
-import { About } from "./views/about/About";
-import { Contact } from "./views/contact/Contact";
-import { Home } from "./views/home/Home";
+import { BasicLayout } from "./layouts/BasicLayout";
 
 function App() {
   return (
     <div className={styles.flex}>
-      <Nav />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-      <Routes>
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      <Routes>
-        <Route path="/about" element={<About />} />
-      </Routes>
+      <BasicLayout />
     </div>
   );
 }
