@@ -1,9 +1,11 @@
 import { Route, Routes } from "react-router-dom";
-import styles from "./App.module.css";
+import "./App.less";
+import styles from "./global.less";
 import { Nav } from "./layouts/nav/Nav";
 import { About } from "./views/about/About";
 import { Contact } from "./views/contact/Contact";
 import { Home } from "./views/home/Home";
+
 function App() {
   return (
     <div className={styles.flex}>
